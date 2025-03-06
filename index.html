@@ -1,0 +1,66 @@
+<!-- index.html - الموقع الشخصي لمحمد جلال -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Galal - Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mohammed Galal</div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button id="darkModeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>I'm <span>Mohammed Galal</span>, a Software Engineer</h1>
+        <p>Passionate about Full-Stack Development & Trading</p>
+        <a href="#contact" class="cta-btn">Talk To Me</a>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a third-year software engineering student at Jain University. I specialize in full-stack development, Agile methodologies, and software testing.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <img src="/images/html.webp" alt="HTML Project">
+            <h3>HTML Project</h3>
+            <a href="project.html" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="/images/css.png" alt="CSS Project">
+            <h3>CSS Project</h3>
+            <a href="project.html" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" name="contactForm" onsubmit="return validateForm()">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div class="resume-download">
+        <a href="resume.pdf" download="Mohammed_Galal_Resume.pdf" class="resume-btn">Download Resume</a>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Mohammed Galal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
